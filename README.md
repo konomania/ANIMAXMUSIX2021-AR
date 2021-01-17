@@ -1,3 +1,3 @@
 # konomi-ar
 
-![hiro](docs/hiro.jpg)
+![baku](marker/pattern-baku.png)
