@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
   <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
@@ -7,16 +8,8 @@
 <body style='margin: 0; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam;'>
     <a-assets>
-      <img id="image" src="image/image1.jpg">
+      <img id="image" src="image/illust.jpg">
     </a-assets>
-
-    <!-- <a-marker preset='hiro'>
-      <a-entity 
-          obj-model="obj: url(models/bulebeery_pot_1.obj)"
-          scale="0.1 0.1 0.1"
-          rotation="270 0 0">
-      </a-entity>
-    </a-marker> -->
 
     <a-marker preset='hiro'>
       <a-entity rotation="-90 0 0">
@@ -26,17 +19,6 @@
 
     <a-entity camera></a-entity>
   </a-scene>
-
-  <script>
-    let index = 0;
-    let images = ["image/image1.jpg", "image/image2.jpg", "image/image3.jpg"];
-    function onClick() {
-      index = (index + 1) % images.length;
-      document.querySelector('a-image').setAttribute('src', images[index]);
-      console.log(index);
-    }
-
-    document.body.addEventListener('click', onClick, true);
-  </script>
 </body>
+
 </html>
